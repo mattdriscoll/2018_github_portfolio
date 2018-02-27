@@ -21,6 +21,11 @@ $secondary: #eb4b87;
 @mixin box-drop-shadow() {
   box-shadow: 0px 8px 16px 2px rgba(0, 0, 0, 0.3);
 }
+$mobile-screen: (
+  columns: 12,
+  gutter: 12px,
+  media: "(max-width: 600px)"
+);
 
 * {
   font-family: 'Open Sans', sans-serif;
@@ -45,7 +50,7 @@ h3 {
   font-size: 24px;
   color: $black;
 }
-p {
+p, li {
   font-size: 18px;
   color: $black;
 }
@@ -62,6 +67,12 @@ a.cta-link {
   &:hover {
     @include box-drop-shadow;
   }
+}
+@include grid-media($mobile-screen){
+  h1 { font-size: 28px; }
+  h2 { font-size: 22px; }
+  h3 { font-size: 20px; }
+  p, li  { font-size: 14px; }
 }
 
 header {
@@ -88,6 +99,12 @@ header {
     transition: background-color 200ms ease-out;
     &:hover {
       background-color: darken($reptar3, 20);
+    }
+  }
+  @include grid-media($mobile-screen) {
+    a {
+      margin: 0 6px;
+      padding: 8px 12px;
     }
   }
 }
@@ -156,6 +173,10 @@ header {
     width: 100%;
     bottom: 0;
   }
+  @include grid-media($mobile-screen) {
+    @include grid-column(10);
+    z-index: 4;
+  }
 }
 
 .slider {
@@ -210,6 +231,12 @@ header {
       color: $secondary;
     }
   }
+
+  @include grid-media($mobile-screen) {
+    @include grid-column(11);
+    @include grid-push(1);
+    margin-top: -20px;
+  }
 }
 
 .page-content {
@@ -233,6 +260,13 @@ header {
     @include grid-push(1);
     margin-top: 10vh;
   }
+
+  @include grid-media($mobile-screen) {
+    .contact-page & {
+      @include grid-column(10);
+      margin-top: 18vh;
+    }
+  }
 }
 
 .work-index {
@@ -249,6 +283,25 @@ header {
     &:first-child {
       margin-bottom: 80px;
     }
+    p {
+      color: $reptar3;
+    }
+    a {
+      text-decoration: none;
+    }
+    img {
+      @include box-drop-shadow;
+    }
+  }
+
+  @include grid-media($mobile-screen) {
+    .project-link {
+      flex-basis: 100%;
+      margin-bottom: 40px;
+      &:first-child {
+        margin-bottom: 40px;
+      }
+    }
   }
 }
 .project-details {
@@ -258,6 +311,12 @@ header {
   }
   .project-copy {
     margin-left: 80px;
+  }
+
+  @include grid-media($mobile-screen) {
+    .project-copy {
+      margin: 0;
+    }
   }
 }
 

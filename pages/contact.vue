@@ -6,7 +6,7 @@
         <app-background></app-background>
         <div class="page-content">
           <h1>Contact</h1>
-          <p>Have an idea for an awesome project?  Is your current site stuck on the 90s?  Get in touch!</p>
+          <p>Have an idea for an awesome project?  Is your current site stuck on the 90s?  Want to know more about how we can work together?  Get in touch!</p>
           <p><a :href="email" class="cta-link">Contact</a></p>
         </div>
       </div>
