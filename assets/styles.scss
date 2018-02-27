@@ -28,7 +28,6 @@ $mobile-screen: (
 );
 
 * {
-  font-family: 'Open Sans', sans-serif;
   margin: 0;
   box-sizing: border-box;
   color: $black;
@@ -38,6 +37,9 @@ img {
 }
 
 // fonts
+h1, h2, h3 {
+  font-family: 'Open Sans', sans-serif;
+}
 h1 {
   font-size: 32px;
   color: $primary;
@@ -51,6 +53,7 @@ h3 {
   color: $black;
 }
 p, li {
+  font-family: 'PT Serif', serif;
   font-size: 18px;
   color: $black;
 }
@@ -186,7 +189,7 @@ header {
   position: relative;
   background-color: $white;
   background-image: url('/assets/img/background_triangle.png');
-  background-position: 8px 24px;
+  background-position: 8px 14px;
   background-repeat: no-repeat;
   background-size: 80%;
   padding: 48px 24px;
@@ -253,7 +256,7 @@ header {
   .contact-page & {
     @include grid-column(7);
     @include grid-push(2);
-    margin-top: 8vh;
+    margin-top: 20vh;
   }
   .project-page--work & {
     @include grid-column(11);

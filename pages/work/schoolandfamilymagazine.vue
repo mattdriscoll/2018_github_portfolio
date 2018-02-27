@@ -9,7 +9,7 @@
       <div class="project-copy">
         <h2>Website Features:</h2>
         <ul>
-          <li>Built with Wordpress</li>
+          <li>Custom Wordpress theme</li>
           <li>Joomag magazine viewing API</li>
           <li>Modular CSS (SASS)</li>
           <li>CMS-driven</li>

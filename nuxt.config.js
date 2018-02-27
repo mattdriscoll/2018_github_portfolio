@@ -15,10 +15,15 @@ module.exports = {
     ],
     link: [
       { rel: 'icon', href: '/favicon.png', sizes: "32x32" },
-      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Open+Sans:400,600,700' },
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Open+Sans:400,600,700|PT+Serif:400,700' },
       { rel: 'stylesheet', href: 'https://use.fontawesome.com/releases/v5.0.6/css/all.css' }
     ]
   },
+
+  /*
+  ** For github pages:
+  */
+  router: { base: '/mattdriscoll.github.io/' },
 
   /*
   ** Customize the progress-bar color
