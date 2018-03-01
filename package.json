@@ -1,7 +1,7 @@
 {
   "name": "Portfolio",
   "version": "1.0.0",
-  "description": "Matt Driscoll",
+  "description": "Matt Driscoll | Web developer DFW Fort Worth Texas Wordpress Javascript Ruby on Rails",
   "author": "mdriscoll815@gmail.com",
   "private": true,
   "scripts": {
@@ -14,6 +14,7 @@
     "nuxt": "^1.0.0"
   },
   "devDependencies": {
+    "@nuxtjs/google-analytics": "^2.0.2",
     "cross-env": "^5.0.1",
     "node-sass": "^4.7.2",
     "sass-loader": "^6.0.6"
