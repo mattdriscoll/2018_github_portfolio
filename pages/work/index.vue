@@ -3,28 +3,10 @@
     <div class="page-content">
       <h1>Portfolio</h1>
       <div class="project-links">
-        <div class="project-link">
-          <nuxt-link to="/work/trinityyoga">
-            <img src="~/assets/img/work_trinity.jpg" alt="Trinity Yoga">
-            <p>Trinity Yoga</p>
-          </nuxt-link>
-        </div>
-        <div class="project-link">
-          <nuxt-link to="/work/schoolandfamilymagazine">
-            <img src="~/assets/img/work_schoolfamily.jpg" alt="School and Family Magazine">
-            <p>School And Family Magazine</p>
-          </nuxt-link>
-        </div>
-        <div class="project-link">
-          <nuxt-link to="/work/foxypropaganda">
-            <img src="~/assets/img/work_foxy.jpg" alt="Foxy Propaganda">
-            <p>Foxy Propaganda</p>
-          </nuxt-link>
-        </div>
-        <div class="project-link">
-          <nuxt-link to="/work/millerglassworks">
-            <img src="~/assets/img/work_miller.jpg" alt="Miller Glassworks">
-            <p>Miller Glassworks</p>
+        <div v-for="project in projects" class="project-link">
+          <nuxt-link :to="project.link">
+            <img :src="project.imgSrc" :alt="project.title">
+            <p>{{ project.title}}</p>
           </nuxt-link>
         </div>
       </div>
@@ -34,6 +16,29 @@
 
 <script>
 export default {
+  data () {
+    return {
+      projects: [
+        {
+          title: 'Trinity Yoga',
+          link: '/work/trinityyoga',
+          imgSrc: '/img/work_trinity.jpg'
+        }, {
+          title: 'School And Family Magazine',
+          link: '/work/schoolandfamilymagazine',
+          imgSrc: '/img/work_schoolfamily.jpg'
+        }, {
+          title: 'Foxy Propaganda',
+          link: '/work/foxypropaganda',
+          imgSrc: '/img/work_foxy.jpg'
+        }, {
+          title: 'Miller Glassworks',
+          link: '/work/millerglassworks',
+          imgSrc: '/img/work_miller.jpg'
+        }
+      ]
+    }
+  }
 }
 </script>
 

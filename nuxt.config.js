@@ -23,7 +23,7 @@ module.exports = {
   /*
   ** For github pages:
   */
-  router: { base: '/mattdriscoll.github.io/' },
+  // router: { base: '/mattdriscoll.github.io/' },
 
   /*
   ** Customize the progress-bar color

@@ -1,26 +1,35 @@
 <template>
   <div class="page-content">
-    <div class="project-details">
-      <div class="project-copy">
-        <h1>Foxy Propaganda</h1>
-        <h3>Digital and Variable Printing</h3>
-      </div>
-      <img src="~/assets/img/work_foxy.jpg" alt="Foxy Propaganda Website">
-      <div class="project-copy">
-        <h2>Website Features:</h2>
-        <ul>
-          <li>Static-generated</li>
-          <li>Video background</li>
-          <li>Blazing fast SSR</li>
-          <li>Modular CSS (SASS)</li>
-        </ul>
-        <a href="http://www.foxypropaganda.com" target="_blank" class="cta-link">View Site</a>
-      </div>
-    </div>
+    <project-details
+      :title="title"
+      :subtitle="subtitle"
+      :img="imgsrc"
+      :features="websiteFeatures"
+      :siteHref="siteHref" >
+    </project-details>
   </div>
 </template>
 
 <script>
+import ProjectDetails from '@/components/WorkDescription.vue'
+
 export default {
+  data () {
+    return {
+      title: 'Foxy Propaganda',
+      subtitle: 'Digital and Variable Printing',
+      imgsrc: 'work_foxy.jpg',
+      websiteFeatures: [
+        'Static-generated',
+        'Video background',
+        'Blazing fast SSR',
+        'Modular CSS (SASS)'
+      ],
+      siteHref: 'http://www.foxypropaganda.com'
+    }
+  },
+  components: {
+    ProjectDetails
+  }
 }
 </script>

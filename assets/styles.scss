@@ -61,12 +61,15 @@ a.cta-link {
   color: $white;
   width: auto;
   padding: 8px 16px;
-  margin: 20px 0;
+  margin: 20px 10px;
   display: inline-block;
   text-decoration: none;
   @include gradient-background($secondary, $primary);
   box-shadow: 0 0 0 rgba(0,0,0,0);
   transition: box-shadow 300ms ease;
+  &:nth-child(2n + 1) {
+    margin-left: 0px;
+  }
   &:hover {
     @include box-drop-shadow;
   }
@@ -113,7 +116,7 @@ header {
 }
 
 .body-background {
-  background-image: url('/assets/img/shapes.svg');
+  background-image: url('/img/memphis_background.svg');
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -167,7 +170,7 @@ header {
   }
   .avatar-image {
     position: absolute;
-    background-image: url('/assets/img/avatar.png');
+    background-image: url('/img/avatar.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center bottom;
@@ -188,7 +191,7 @@ header {
   @include box-drop-shadow;
   position: relative;
   background-color: $white;
-  background-image: url('/assets/img/background_triangle.png');
+  background-image: url('/img/header_background_accent.png');
   background-position: 8px 14px;
   background-repeat: no-repeat;
   background-size: 80%;
@@ -283,9 +286,6 @@ header {
   .project-link {
     flex-basis: calc(50% - 20px);
     margin: 20px 10px 40px;
-    &:first-child {
-      margin-bottom: 80px;
-    }
     p {
       color: $reptar3;
     }
@@ -294,6 +294,7 @@ header {
     }
     img {
       @include box-drop-shadow;
+      margin-bottom: 16px;
     }
   }
 
