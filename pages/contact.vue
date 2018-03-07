@@ -24,9 +24,9 @@ export default {
   },
   data () {
     return {
-      // email: `mailto:%63%6F%6E%74%61%63%74%40%38%31%35%64%65%76%2E%63%6F%6D?subject=Let's%20Talk%20Websites!`
       email: {
-        href: `mailto:%6D%64%72%69%73%63%6F%6C%6C%38%31%35%40%67%6D%61%69%6C%2E%63%6F%6D?subject=Let's%20Talk%20Websites!`,
+        // href: `mailto:%6D%64%72%69%73%63%6F%6C%6C%38%31%35%40%67%6D%61%69%6C%2E%63%6F%6D?subject=Let's%20Talk%20Websites!`,
+        href: `mailto:%6D%61%74%74%40%38%31%35%64%65%76%2E%63%6F%6D?subject=Let's%20Talk%20Websites!`,
         content: `Email`
       }
     }

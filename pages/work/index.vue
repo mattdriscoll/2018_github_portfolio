@@ -22,19 +22,19 @@ export default {
         {
           title: 'Trinity Yoga',
           link: '/work/trinityyoga',
-          imgSrc: '/img/work_trinity.jpg'
+          imgSrc: '/img/work_sm_trinity.jpg'
         }, {
           title: 'School And Family Magazine',
           link: '/work/schoolandfamilymagazine',
-          imgSrc: '/img/work_schoolfamily.jpg'
+          imgSrc: '/img/work_sm_schoolfamily.jpg'
         }, {
           title: 'Foxy Propaganda',
           link: '/work/foxypropaganda',
-          imgSrc: '/img/work_foxy.jpg'
+          imgSrc: '/img/work_sm_foxy.jpg'
         }, {
           title: 'Miller Glassworks',
           link: '/work/millerglassworks',
-          imgSrc: '/img/work_miller.jpg'
+          imgSrc: '/img/work_sm_miller.jpg'
         }
       ]
     }
