@@ -1,6 +1,8 @@
 # Matt Driscoll
 
-> Matt Driscoll
+This is the source for my [2018 portfolio](https://mattdriscoll.github.io/).
+
+I built this site with Vue.js, using the Nuxt.js framework.  It is a single static, server side-rendered page.
 
 ## Build Setup
 
