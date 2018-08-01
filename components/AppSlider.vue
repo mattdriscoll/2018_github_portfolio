@@ -9,7 +9,7 @@
         Hi, I'm Matt.  I'm a freelance web developer from Texas, currently living in DFW.  I enjoy building websites that stand out from the rest.  From small business sites to large scale web apps, I will help you develop a web presence that is sure to catch eyes, look great on any screen, and generate revenue.
       </p>
       <p v-show="currentSlide==1">
-        Freelance Web Developer formerly with <a href="https://www.thefowlergroup.com" target="_blank">The Fowler Group</a>.  I build full-scale web apps, custom CMS-driven websites, e-commerce sites, static-generated sites, and email campaigns.  See some expamles of my <nuxt-link to="/work">work.</nuxt-link>
+        Web Developer at <a href="http://www.thestarrconspiracy.com" target="_blank">The Starr Conspiracy</a>.  I build full-scale web apps, custom CMS-driven websites, e-commerce sites, static-generated sites, and email campaigns.  See some examples of my <nuxt-link to="/work">work.</nuxt-link>
       </p>
       <p v-show="currentSlide==2">
         My diverse set of skills include HTML, CSS, Javascript, PHP, Ruby, Jekyll, Vue, Nuxt, Wordpress, Adobe Photoshop and Illustrator.  I primarily work in Node.js, but other stacks are no problem.
