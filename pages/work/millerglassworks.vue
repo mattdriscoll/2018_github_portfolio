@@ -25,7 +25,7 @@ export default {
         'Blazing fast SSR',
         'Modular CSS (SASS)'
       ],
-      siteHref: 'http://schoolandfamilymagazine.com'
+      siteHref: 'http://millerglassworks.com/'
     }
   },
   components: {
